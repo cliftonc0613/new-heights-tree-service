@@ -20,20 +20,23 @@
             <div class="nav-content">
                 <div class="logo">
                     <h1>[Business Name]</h1>
-                    <span class="tagline">[Service Type] You Can Trust</span>
                 </div>
                 <nav class="nav">
+                    <a href="#home">Home</a>
                     <a href="#services">Services</a>
-                    <a href="#process">How It Works</a>
-                    <a href="#gallery">Our Work</a>
-                    <a href="#testimonials">Reviews</a>
-                    <a href="#about">About</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#testimonials">Testimonials</a>
                     <a href="#contact">Contact</a>
-                    <a href="tel:[phone]" class="call-btn">
-                        <span class="material-icons">phone</span>
-                        Call Now
-                    </a>
                 </nav>
+                <div class="header-utilities">
+                    <button class="search-btn" aria-label="Search">
+                        <span class="material-icons">search</span>
+                    </button>
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="material-icons">dark_mode</span>
+                    </button>
+                    <a href="#contact" class="get-in-touch-btn">Get in Touch</a>
+                </div>
                 <div class="mobile-menu-toggle">
                     <span class="material-icons">menu</span>
                 </div>
@@ -479,27 +482,54 @@
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
+    <!-- Mobile Menu & Header Utilities Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
             const mobileToggle = document.querySelector('.mobile-menu-toggle');
             const nav = document.querySelector('.nav');
             
-            mobileToggle.addEventListener('click', function() {
-                nav.classList.toggle('active');
-                const icon = mobileToggle.querySelector('.material-icons');
-                icon.textContent = nav.classList.contains('active') ? 'close' : 'menu';
-            });
-            
-            // Close mobile menu when clicking nav links
-            const navLinks = document.querySelectorAll('.nav a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    nav.classList.remove('active');
+            if (mobileToggle && nav) {
+                mobileToggle.addEventListener('click', function() {
+                    nav.classList.toggle('active');
                     const icon = mobileToggle.querySelector('.material-icons');
-                    icon.textContent = 'menu';
+                    icon.textContent = nav.classList.contains('active') ? 'close' : 'menu';
                 });
-            });
+                
+                // Close mobile menu when clicking nav links
+                const navLinks = document.querySelectorAll('.nav a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        nav.classList.remove('active');
+                        const icon = mobileToggle.querySelector('.material-icons');
+                        icon.textContent = 'menu';
+                    });
+                });
+            }
+            
+            // Theme toggle functionality (placeholder)
+            const themeToggle = document.querySelector('.theme-toggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    const icon = themeToggle.querySelector('.material-icons');
+                    if (icon.textContent === 'dark_mode') {
+                        icon.textContent = 'light_mode';
+                        // Add dark theme logic here
+                    } else {
+                        icon.textContent = 'dark_mode';
+                        // Add light theme logic here
+                    }
+                });
+            }
+            
+            // Search button functionality (placeholder)
+            const searchBtn = document.querySelector('.search-btn');
+            if (searchBtn) {
+                searchBtn.addEventListener('click', function() {
+                    // Add search functionality here
+                    console.log('Search clicked');
+                });
+            }
         });
     </script>
 </body>
