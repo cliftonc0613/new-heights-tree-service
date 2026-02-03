@@ -1012,105 +1012,116 @@ a:hover {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background-color: #333;
+    background-color: #1a1a1a;
     color: #fff;
 }
 
 .contact-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .contact-header h2 {
     color: #fff;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 16px;
 }
 
 .contact-header p {
-    color: #ddd;
-    font-size: 1.2em;
+    color: #9ca3af;
+    font-size: 1.1em;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 60px;
-    margin-bottom: 60px;
-}
-
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-}
-
-.contact-method {
+.contact-buttons {
     display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 48px;
 }
 
-.contact-method .material-icons {
-    font-size: 32px;
-    color: #fff;
-    margin-top: 5px;
-}
-
-.contact-method h4 {
-    color: #fff;
-    margin-bottom: 8px;
-}
-
-.contact-method p {
-    color: #ddd;
-    margin: 0;
-}
-
-.contact-method a {
-    color: #fff;
-    font-weight: 600;
-}
-
-.contact-method a:hover {
-    color: #ddd;
-}
-
-.phone-number {
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-.available, .response, .coverage {
-    font-size: 0.9em;
-    color: #aaa;
-}
-
-.emergency-contact {
-    background-color: rgba(255,255,255,0.1);
-    padding: 30px;
+.btn-contact-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border: 2px solid #fff;
     border-radius: 8px;
-    text-align: center;
-}
-
-.emergency-contact h3 {
     color: #fff;
-    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.emergency-contact p {
-    color: #ddd;
-    margin-bottom: 20px;
+.btn-contact-primary:hover {
+    background-color: #fff;
+    color: #1a1a1a;
 }
 
-.final-cta {
+.btn-contact-primary .material-icons {
+    font-size: 18px;
+}
+
+.btn-contact-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    color: #ccc;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-contact-secondary:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-contact-secondary .material-icons {
+    font-size: 18px;
+}
+
+.contact-divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin-bottom: 40px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.contact-detail {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.contact-detail:hover {
+    color: #fff;
+}
+
+.contact-detail .material-icons {
+    font-size: 20px;
+}
+
+.contact-trust {
     text-align: center;
-}
-
-.cta-subtext {
-    color: #aaa;
-    font-size: 0.9em;
-    margin-top: 15px;
+    color: #6b7280;
+    font-size: 0.85em;
 }
 
 /* Footer */
@@ -1279,9 +1290,15 @@ a:hover {
         font-size: 1em;
     }
 
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
     }
     
     .footer-content {
