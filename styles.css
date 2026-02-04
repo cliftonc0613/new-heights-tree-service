@@ -56,7 +56,7 @@ a:hover {
 
 /* Buttons */
 .btn-primary {
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
     padding: 14px 28px;
     border: none;
@@ -72,7 +72,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #555;
+    background-color: #1e3d2a;
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     color: #fff;
@@ -93,14 +93,14 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .btn-primary-large {
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
     padding: 18px 36px;
     border: none;
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .btn-primary-large:hover {
-    background-color: #555;
+    background-color: #1e3d2a;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     color: #fff;
@@ -139,7 +139,7 @@ a:hover {
 }
 
 .btn-emergency:hover {
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
 }
 
@@ -231,7 +231,7 @@ a:hover {
 }
 
 .get-in-touch-btn {
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff !important;
     padding: 10px 20px;
     border-radius: 6px;
@@ -426,7 +426,7 @@ a:hover {
 .villain {
     text-align: center;
     padding: 40px;
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
     border-radius: 8px;
 }
@@ -574,7 +574,7 @@ a:hover {
 .step-number {
     width: 80px;
     height: 80px;
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -725,7 +725,7 @@ a:hover {
 /* Stats Section */
 .stats {
     padding: 60px 0;
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
 }
 
@@ -1007,7 +1007,7 @@ a:hover {
 }
 
 .emergency-btn:hover {
-    background-color: #333;
+    background-color: #2d5a3d;
     color: #fff;
 }
 
@@ -1137,7 +1137,7 @@ a:hover {
 
 /* Footer */
 .footer {
-    background-color: #222;
+    background-color: #1a2e20;
     color: #ddd;
     padding: 60px 0 30px;
 }
